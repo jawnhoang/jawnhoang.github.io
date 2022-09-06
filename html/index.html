@@ -1,0 +1,125 @@
+<html lang = 'en'>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "../resources/css/index.css">
+        <link rel="stylesheet" href = "../resources/css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>John's Corner</title>
+    </head>
+
+
+<!-- NAV BAR BEGIN -->
+<div class = "nav" id = "my-nav">
+    <a href="#aboutMe" onclick ="aboutMe();" class="HoangNavItem">About Me</a>
+    <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
+    <a href="#contact" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- NAV BAR END -->
+
+<!-- BODY BEGIN -->
+<body>
+    <!-- ROW ONE BEGIN -->
+    <div class = "row1" id = "profileRow">
+
+        <!-- left-side-col contains profile picture -->
+        <div class = "left-side-col">
+            <div class = "headcard">
+                <img class = "pfp" id = "johnHS" src = "../resources/images/Johnheadshot1.jpg" alt = "Avatar">
+                <!-- <h4><b>John Hoang</b></h4>
+                <p>Future Software Engineer</p> -->
+            </div>
+        </div>
+
+        <!-- right-side-col contains about me info -->
+        <div class = "right-side-col">
+            <h1 class = "profHeader-AM"> About Me</h1>
+            <p class = "am-bio">
+                Hi! My name is <span id = "name">John Hoang</span> and I am a recent graduate from San Jose State University. 
+                I received my <span id = "degree">B.S. in Software Engineering</span> back in May and am currently 
+                on the hunt for a full time position as a software engineer!
+                <br><br>
+                Please explore my site to learn more about me and my strengths as a future software engineer!
+            </p>
+
+
+            <!-- <h2 class = "profHead-MH">My Hobbies</h2>
+            <p>I like to spend my free time doing: </p>
+            <li>Working Out</li>
+            <li>Listening to EDM, Jazz, LoFi HipHop, Rap</li>
+            <li>Playing video games with my friends</li> -->
+
+            <h2 class = "profHead-MG">My Goals for 2022</h2>
+            <p class = "am-goals">
+                - Improve data structures and algorithm strengths.<br>
+                - Get a job and apply what I learned throughout my time as a student.<br>
+                - Network more with those within the industry. <br>
+                - Hit 370lb deadlift PR by December.
+            </p>
+
+        </div>
+    </div>
+    <!-- ROW ONE END -->
+
+    <!-- ROW TWO BEGIN -->
+    <div class = "row2" id = "academicNutshell">
+        <!-- CONTAINER FOR ENTIRE CARD SECTION -->
+        <div class="journey">
+            <h1 class = "an-title">
+               <center> Academic Journey in a Nutshell </center>
+            </h1>
+            <p id = "acanut">
+                During my childhood I spent most my time playing with LEGO. This became the foundation of my interests in computer science and software engineering.</b>
+                I've been looking at code as tiny LEGO bricks that fit together and forms something bigger. 
+                Coding to me is basically playing with an endless supply of digital building blocks.
+                <br><br>
+    
+                Throughout my academic career at San Jose State,  I've experienced multiple languages in creating projects and programs through
+                my various courses. My main lanauge is Python, with Java as my secondary.
+                <br><br>
+                Most of the projects I've built or worked on are web applications that all catered to a specific category.
+                Some of my other smaller scale projects exposed me to ideologies like parallel processing / multithreading, 
+                and RDBMS.<br><br>
+                You can visit the <b><a href="#projects" onclick="projects()">Project</b></a> tab to learn more about these projects or click on the bolded word!
+                <!-- todo: ahref Project -->
+            </p>
+        </div>
+    </div>
+    <!-- ROW TWO END -->
+    
+    <!-- ROW THREE BEGIN -->
+    <div class="row3">
+        <!-- CONTAINER FOR ENTIRE CARD SECTION -->
+        <div class = "experience">
+            <h1 class = "ex-title">
+                <center>My Favorite Courses and their Outcomes</center>
+            </h1>
+            <p class = "course-para">
+                <b>Intro to Parallel Processing</b><br>
+                This course dove into the concept of parall processing/programming at a
+                software and hardware level. The idea of executing code in parallel 
+                fascinates me yet introduces more levels of complexity<br><br>
+
+                <b>Software Engineering I and II</b><br>
+                These two courses taught me how to think like a software engineer and introduced me to web development.
+                I learned the Software Development Life Cycle, written deliverables, and team management<br><br>
+
+                <b>Intro to Project Management</b><br>
+                Here I was able to learn what it means to be a PM and gain insight on what they do in the industry.
+                I learned the various methods on software development like Agile and Scrum, and how to deliver an idea to stakeholders.
+                This course made me interesting in a PM career as well aside from being a SWE.
+            </p>
+        </div>
+    </div>
+</body>
+<!-- BODY END -->
+
+</html>
+
+<script src="../js/index.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<noscript>Enable JavaScript for full site activity.</noscript>
