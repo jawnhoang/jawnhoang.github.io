@@ -1,0 +1,166 @@
+<html lang = 'en'>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "../resources/css/eyeCU.css">
+        <link rel="stylesheet" href = "../resources/css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>John's Corner</title>
+    </head>
+
+
+<!-- NAV BAR BEGIN -->
+<div class = "nav" id = "my-nav">
+    <a href="#aboutMe" onclick ="aboutMe();" class="HoangNavItem">About Me</a>
+    <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
+    <a href="#contact" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- NAV BAR END -->
+
+<!-- BODY BEGIN -->
+<body>
+    <div class = proj-card id = "eyeCU">
+
+        <!-- SLIDE SHOW AND DESC BEGIN -->
+
+        <div class = "title"><center><h1 class = "proj-title">eyeCU</h1></center></div>
+        <div class = "slide-container">
+            <div class="slides fade">
+                <img src = "../resources/images/eyeCU/landlogin.png" style = "width: 100%;">
+                <div class="image-desc">Landing / login page for unregistered users</div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/eyeCU/register.png" style = "width: 100%;">
+                <div class="image-desc">Account registration page</div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/eyeCU/dash.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Once logged in, users are taken to the homepage of the application. 
+                    Here is where users can view live footage through the remote camera!
+                
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/eyeCU/regFace.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Upon going to settings, users can upload a picture of a face for the system to detect!
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/eyeCU/dashFR.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Going back to the dash after uploading a picture of a face, the next time
+                    a face is in frame, if that face is in the system, it will be detected.
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/eyeCU/solenoidctrl.png" style = "width: 100%;">
+                <div class="image-desc">
+                    When a face is detected, the name associated with the face will dynamically update
+                    in the in the left tile. Only then, will users be able to click the "Unlock" button to remotely 
+                    control the solenoid lock for the door.
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/eyeCU/hw.png" style = "width: 100%;">
+                <div class="image-desc">
+                    This is the hardware setup of the security system.<br>
+                    The components are: Raspberry Pi, PiCam, Relay, Solenoid Lock, and a 3D printed gate to act as a door.
+                </div>
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+        <br><br>
+        <!-- SLIDE SHOW AND DESC END -->
+
+
+
+
+
+        <!-- DEMO VIDEO BEGIN -->
+        <div class="vid-demo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KffHr5lxrr4" title="eyeCU demo commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="image-desc">
+            This product demonstration was shot as a parody commercial to sell 
+            what eyeCU can offer. 
+         </div>
+        <br><br><br>
+        <!-- DEMO VIDEO END -->
+        
+
+        <!-- DELIVERABLES BEGIN -->
+        <div class="ppt">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQqVVoXT3TA1hCrcpmTZgQylK5dK3Bsf5GbD1UbeBOdEfHULa1bRXe1t0M3BTU6kH3jYgdhe4M30tz6/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div class="image-desc">
+            Read through the project's journey from cradle to grave!<br>
+            Learn about the team behind this product and the list of challenges and solutions
+            we faced during our time working together.
+            <br>
+            use arrow keys "<" or ">" to traverse through slides!
+         </div>
+        <br><br><br>
+
+
+        <center><div class="image-desc">
+            The following deliverables are a poster board created for a live project expo that was conducted at <br>
+            SJSU where participants can stop by to check out the product (like a science fair), and eyeCU's project report which
+            outlines it's journey from storyboard to final release.
+         </div></center>
+         <br>
+        <div class="poster">
+            <iframe src = "../resources/deliverables/eyeCU/eyeCU_Poster.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <br><br><br>
+        <div class="report">
+            <iframe src = "../resources/deliverables/eyeCU/eyeCU-report.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <br><br><br>
+        <!-- DELIVERABLES END -->
+
+
+
+
+
+    </div>
+
+
+
+</body>
+<!-- BODY END -->
+
+
+
+
+</html>
+
+<script src="../js/index.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<noscript>Enable JavaScript for full site activity.</noscript>
