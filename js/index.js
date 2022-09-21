@@ -44,6 +44,23 @@ function eyeCU(){
   window.location = fullPath;
 }
 
+function fastpages(){
+  var dirPath = dirname(location.href);
+  fullPath = dirPath + "/fastPages.html";
+  window.location = fullPath;
+}
+
+function archer(){
+  var dirPath = dirname(location.href);
+  fullPath = dirPath + "/archer.html";
+  window.location = fullPath;
+}
+
+function JINA(){
+  var dirPath = dirname(location.href);
+  fullPath = dirPath + "/JINA.html";
+  window.location = fullPath;
+}
 
 // REDIRECTS FOR PROJECT CARD END
 

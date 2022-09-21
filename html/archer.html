@@ -1,0 +1,175 @@
+<html lang = 'en'>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device - width, initial-scale = 1, shrink-to-fit = no">
+        <link rel="stylesheet" href = "../resources/css/archer.css">
+        <link rel="stylesheet" href = "../resources/css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Archer</title>
+    </head>
+
+
+<!-- NAV BAR BEGIN -->
+<div class = "nav" id = "my-nav">
+    <a href="#aboutMe" onclick ="aboutMe();" class="HoangNavItem">About Me</a>
+    <a href="#projects" onclick="projects();" class="HoangNavItem">Projects</a>
+    <a href="#contact" onclick="contacts();" class="HoangNavItem">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="navDropDown();">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- NAV BAR END -->
+
+<!-- BODY BEGIN -->
+<body>
+    <div class = proj-card id = "archer">
+
+        <!-- SLIDE SHOW AND DESC BEGIN -->
+
+        <div class = "title"><center><h1 class = "proj-title">Archer</h1></center></div>
+        <div class = "slide-container">
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherHP.png" style = "width: 100%;">
+                <div class="image-desc">Landing page for new visitors.</div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherRG.png" style = "width: 100%;">
+                <div class="image-desc">Account registration page.</div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherLG.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Users will either be redirected to the log in page after successful account registration
+                    or can be directed to it instantly after clicking login on the navigation bar.
+                
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherSURV.png" style = "width: 100%;">
+                <div class="image-desc">
+                    New accounts will be redirected to this survey forum upon their first time logging in. 
+                    Here, users will select their best fit choices per category, along with a security question for future 
+                    password resets if needed.
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherDASH.png" style = "width: 100%;">
+                <div class="image-desc">
+                    This is Archer's dashboard. Unique per account with the option to view other people's dash as well. The
+                    dash includes the information gathered from the survey and friends the user has added. More information about it is shown
+                    in the demo video below.<br>
+                    The "Match me by" option located on the left is Archer's unique feature that pairs users with other users with similar 
+                    survey answers.
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherSettings.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Users can change their login information or their profile pictures.
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherInActMatch.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Matching by indoor activity interests, users can find other users that enjoy the same hobbies or activities.
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherOutActMatch.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Matching by outdoor activity interests, users can find other users that enjoy the same hobbies or activities.
+                </div>
+            </div>
+
+            <div class="slides fade">
+                <img src = "../resources/images/Archer/ArcherMajMatch.png" style = "width: 100%;">
+                <div class="image-desc">
+                    Users can also match based on their university major in hopes of finding a random classmate to befriend and grow a 
+                    connection.
+                </div>
+            </div>
+
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+        </div>
+        <br><br>
+        <!-- SLIDE SHOW AND DESC END -->
+
+
+
+
+
+        <!-- DEMO VIDEO BEGIN -->
+        <div class="vid-demo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q5GYVQLdg5o" title="Archer Test Cases / Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="image-desc">
+            This demo shows a run through of all of Archer's features and test cases. 
+            Here, it explores all routes and logic the site has to offer!
+         </div>
+        <br><br><br>
+        <!-- DEMO VIDEO END -->
+        
+
+        <!-- DELIVERABLES BEGIN -->
+        <div class="ppt">
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRvzKCabwun3Imm-_t44ClDAwoR1vy5ZfBxYhmAsrh7IOR41gSIhBuoG38jNSB043Lea40l6JyWqny/embed?start=false&loop=false&delayms=3000"  frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <div class="image-desc">
+            Read about the background, challenges, and solutions about Archer!
+            <br>
+            Use arrow keys "<" or ">" to traverse through slides!
+         </div>
+        <br><br><br>
+
+
+        <center><div class="image-desc">
+            This report documents the entire lifecycle of Archer. Included in it are some diagrams and logs that the team used
+            to assist with development, design, time management!
+         </div></center>
+         <br>
+        <div class="report">
+            <iframe src = "../resources/deliverables/Archer/Archer SDLC.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+        <br><br><br>
+        <!-- DELIVERABLES END -->
+
+    </div>
+
+
+
+</body>
+<!-- BODY END -->
+
+
+
+
+</html>
+
+<script src="../js/index.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<noscript>Enable JavaScript for full site activity.</noscript>
